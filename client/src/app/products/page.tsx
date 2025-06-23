@@ -44,7 +44,6 @@ const Products = () => {
 
   return (
     <div className="mx-auto pb-5 w-full">
-      {/* SEARCH BAR */}
       <div className="mb-6">
         <div className="flex items-center border-2 border-gray-200 rounded">
           <SearchIcon className="w-5 h-5 text-gray-500 m-2" />
@@ -57,7 +56,6 @@ const Products = () => {
         </div>
       </div>
 
-      {/* HEADER BAR */}
       <div className="flex justify-between items-center mb-6">
         <Header name="Products" />
         <button
@@ -69,7 +67,6 @@ const Products = () => {
         </button>
       </div>
 
-      {/* BODY PRODUCTS LIST */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg-grid-cols-3 gap-10 justify-between">
         {isLoading ? (
           <div>Loading...</div>
@@ -81,7 +78,7 @@ const Products = () => {
             >
               <div className="flex flex-col items-center">
                 <Image
-                  src={`https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/product${
+                  src={`https://s3-invman.s3.ap-south-1.amazonaws.com/product${
                     Math.floor(Math.random() * 3) + 1
                   }.png`}
                   alt={product.name}

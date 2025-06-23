@@ -56,7 +56,6 @@ const CreateProductModal = ({
       <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
         <Header name="Create New Product" />
         <form onSubmit={handleSubmit} className="mt-5">
-          {/* PRODUCT NAME */}
           <label htmlFor="productName" className={labelCssStyles}>
             Product Name
           </label>
@@ -70,7 +69,6 @@ const CreateProductModal = ({
             required
           />
 
-          {/* PRICE */}
           <label htmlFor="productPrice" className={labelCssStyles}>
             Price
           </label>
@@ -84,7 +82,6 @@ const CreateProductModal = ({
             required
           />
 
-          {/* STOCK QUANTITY */}
           <label htmlFor="stockQuantity" className={labelCssStyles}>
             Stock Quantity
           </label>
@@ -98,7 +95,6 @@ const CreateProductModal = ({
             required
           />
 
-          {/* RATING */}
           <label htmlFor="rating" className={labelCssStyles}>
             Rating
           </label>
@@ -112,7 +108,6 @@ const CreateProductModal = ({
             required
           />
 
-          {/* CREATE ACTIONS */}
           <button
             type="submit"
             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"

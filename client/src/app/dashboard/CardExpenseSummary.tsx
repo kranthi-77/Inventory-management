@@ -49,16 +49,13 @@ const CardExpenseSummary = () => {
         <div className="m-5">Loading...</div>
       ) : (
         <>
-          {/* HEADER */}
           <div>
             <h2 className="text-lg font-semibold mb-2 px-7 pt-5">
               Expense Summary
             </h2>
             <hr />
           </div>
-          {/* BODY */}
           <div className="xl:flex justify-between pr-7">
-            {/* CHART */}
             <div className="relative basis-3/5">
               <ResponsiveContainer width="100%" height={140}>
                 <PieChart>
@@ -103,7 +100,6 @@ const CardExpenseSummary = () => {
               ))}
             </ul>
           </div>
-          {/* FOOTER */}
           <div>
             <hr />
             {expenseSummary && (
